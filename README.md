@@ -244,11 +244,6 @@ For meetings already scheduled on your laptop:
   - Follow the pairing code instructions
   - OR: Join the meeting on your laptop as a participant and share screen
 
-**Whiteboarding**:
-- Some Zoom Rooms support digital whiteboarding
-- Check if this feature is available on your room controller
-- Great for brainstorming sessions
-
 **Recording**:
 - As host, click "Record" on the controller or in your Zoom app
 - Choose "Record to Cloud" for automatic storage and transcription
