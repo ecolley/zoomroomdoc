@@ -44,9 +44,29 @@ A Zoom Room is a dedicated meeting space with:
 ### First Time Setup
 
 1. Launch the Zoom Room Controller App on your Windows PC
-2. Sign in with your WFA Zoom credentials
+2. Sign in with your WFA Zoom credentials (your normal Zoom account)
 3. The app will discover available Zoom Rooms on your network
 4. Select the WFA meeting room from the list
+5. If prompted, enter the pairing code shown on the Zoom Room display
+
+### Who Can Use the Controller App
+
+**Any staff member** with a WFA Zoom account can use the Zoom Room Controller App from their desk - no special permissions required. Simply install the add-on and sign in with your normal credentials.
+
+**What you can control:**
+- Start or join meetings
+- Adjust volume and mute/unmute
+- Share screen
+- Invite participants
+- View what's on the room display
+- End meetings
+
+**What's protected (requires room passcode):**
+- Changing Zoom Room settings
+- Signing out of the Zoom Room
+- Exiting the Zoom Room application
+
+This means you can run meetings from your desk, but only IT admins can modify the room configuration.
 
 ## Scheduling Meetings for the Zoom Room
 

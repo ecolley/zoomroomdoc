@@ -20,10 +20,14 @@
 
 ## Remote Setup (From Your Desk)
 
+**Anyone with a WFA Zoom account can do this:**
+
 1. Open **Zoom Room Controller App** on your PC
 2. Select **WFA meeting room**
 3. Click **"Start Meeting"** or **"Join Meeting"**
 4. Walk to the meeting room (it's already running)
+
+*Note: Requires Zoom Room Controller add-on and WFA network access*
 
 ---
 
