@@ -1,23 +1,31 @@
-# Zoom Room Calendar Integration Options
+# Zoom Room Calendar Integration - Active Setup
 
-This document explains the calendar integration options for the WFA Zoom Room to help you choose the best setup.
+**Current Status**: Calendar integration with Microsoft 365 is **ACTIVE**
+- **Room Resource**: zoomroom@wfanet.org
+- **Organization**: WFA
+
+This document explains how the calendar integration works and provides guidance for using and maintaining it.
 
 ## Overview
 
-Zoom Rooms support three calendar integration modes:
-1. **Calendar Integration** (Microsoft 365/Exchange) - Automatic display of scheduled meetings
-2. **Manual Join** ("None" mode) - Staff manually join using Meeting IDs
-3. **Third-party** (not recommended for Microsoft 365 environments)
+The WFA Zoom Room is configured with Microsoft 365 calendar integration. This means:
+- Meetings scheduled with `zoomroom@wfanet.org` automatically appear on the Zoom Room display
+- Staff can start meetings with one tap instead of entering Meeting IDs
+- The room schedule is visible, preventing double-booking
+- Manual join is still available for ad-hoc meetings
 
-## Option 1: Calendar Integration with Microsoft 365 (Recommended)
+## How Our Current Setup Works
+
+## Calendar Integration with Microsoft 365 (Active Configuration)
 
 ### How It Works
 
-When calendar integration is enabled:
-1. Staff schedule meetings in Outlook and invite the Zoom Room as a resource (e.g., `zoomroom@wfa.com`)
-2. The meeting automatically appears on the Zoom Room display
-3. Staff walk into the room and tap "Start" on the scheduled meeting
-4. No need to manually enter Meeting IDs
+With calendar integration enabled:
+1. Staff schedule meetings in Outlook and invite the Zoom Room as a resource (`zoomroom@wfanet.org`)
+2. The room resource automatically accepts the meeting invitation
+3. The meeting automatically appears on the Zoom Room display
+4. Staff walk into the room and tap "Start" on the scheduled meeting
+5. No need to manually enter Meeting IDs
 
 ### What You See on the Zoom Room Display
 
@@ -47,27 +55,26 @@ When calendar integration is enabled:
 ⚠️ **Learning curve**: Small change to current scheduling workflow
 ⚠️ **Existing meetings**: Need to update already-scheduled meetings to add the room
 
-### Setup Requirements
+### Our Configuration
 
-To enable calendar integration, you'll need to:
+The WFA Zoom Room calendar integration has been configured as follows:
 
-1. **Create a Room Resource Mailbox** in Microsoft 365
-   - Email address like `zoomroom@wfa.com` or `meetingroom@wfa.com`
-   - Configure as a room resource (allows automatic booking)
-   - Set booking permissions to allow anyone in company to book it
+1. **Room Resource Mailbox** created in Microsoft 365
+   - Email address: `zoomroom@wfanet.org`
+   - Configured as a room resource (allows automatic booking)
+   - Booking permissions: Anyone in WFA can book it
+   - Auto-accept: Enabled
 
-2. **Configure Zoom Room Calendar Settings**
-   - In Zoom admin portal: Room Management → Select Room → Calendar Integration
-   - Choose "Microsoft Exchange" or "Office 365"
-   - Authenticate with the room resource credentials
-   - Test the connection
+2. **Zoom Room Calendar Settings** configured
+   - In Zoom admin portal: Room Management → Zoom Room → Calendar Integration
+   - Calendar service: Office 365
+   - Authenticated with room resource credentials
+   - Connection status: Active
 
-3. **Train Staff**
-   - When scheduling Zoom meetings, add the room resource as an attendee
+3. **Staff Training**
+   - When scheduling Zoom meetings, add `zoomroom@wfanet.org` as an attendee or location
    - The room resource auto-accepts the invitation
-   - Meeting appears on Zoom Room display
-
-**Time estimate**: 30-60 minutes for initial setup
+   - Meeting appears on Zoom Room display for one-tap starting
 
 ### Detailed Setup Steps
 
@@ -128,48 +135,61 @@ In the Zoom Room Calendar settings, you can configure:
 **Scheduling a new meeting:**
 1. Create meeting in Outlook as usual
 2. Click "Add a Zoom Meeting" (Zoom Outlook add-in)
-3. **Add the room resource** (`zoomroom@wfa.com`) as a Location or Attendee
+3. **Add the room resource** (`zoomroom@wfanet.org`) as a Location or Attendee
 4. Send invitation
 5. Room resource auto-accepts
 
 **On meeting day:**
 1. Walk into meeting room
-2. See your meeting on the Zoom Room display
+2. See your meeting on the Zoom Room display with title and time
 3. Tap "Start Meeting"
 4. Done!
 
 **For existing meetings:**
-- Forward the meeting invitation to `zoomroom@wfa.com`, OR
+- Forward the meeting invitation to `zoomroom@wfanet.org`, OR
 - Edit the meeting and add the room resource as an attendee
+
+**To modify a scheduled meeting:**
+- Edit the meeting in Outlook and send updates
+- Changes appear automatically on the Zoom Room display
+
+**To cancel or remove from room:**
+- Cancel the meeting entirely, OR
+- Remove `zoomroom@wfanet.org` from the attendees and send update
 
 ---
 
-## Option 2: Manual Join ("None" Mode - Current Setup)
+## Alternative: Manual Join (Still Available)
 
 ### How It Works
 
-Without calendar integration:
-1. Staff schedule Zoom meetings in Outlook as usual (Zoom Room is not invited)
+Even with calendar integration enabled, staff can still manually join any meeting:
+1. Staff can schedule Zoom meetings in Outlook without inviting the room
 2. On meeting day, staff walk to the room
 3. Staff manually tap "Join" on the Zoom Room controller
 4. Staff enter the Meeting ID from their Outlook invitation
 5. Meeting starts
 
+### When to Use Manual Join
+
+Use manual join for:
+- **Ad-hoc meetings**: Joining a meeting that wasn't scheduled in advance
+- **Guest meetings**: Joining someone else's meeting that doesn't involve the room resource
+- **Forgot to add room**: When you scheduled a meeting but forgot to add zoomroom@wfanet.org
+- **Flexibility**: Can join any Zoom meeting instantly without pre-scheduling
+
 ### Pros
 
-✅ **No setup required**: Already working this way
 ✅ **Flexibility**: Can use room for any meeting, not just scheduled ones
-✅ **No change to scheduling**: Staff continue current workflow
-✅ **Works for ad-hoc meetings**: Easy to join any meeting ID
+✅ **No pre-scheduling needed**: Works for last-minute meetings
+✅ **Works for external meetings**: Join anyone's Zoom meeting
 
 ### Cons
 
 ⚠️ **More steps**: Must manually find and enter Meeting ID
-⚠️ **No schedule visibility**: Can't see if room is booked from the Zoom Room display
-⚠️ **Room conflicts possible**: Two people might try to use room at same time
-⚠️ **Slower start**: Takes longer to get meeting running
-⚠️ **Manual process every time**: Repetitive for regular/recurring meetings
+⚠️ **Slower start**: Takes longer than one-tap scheduled meetings
 ⚠️ **Error-prone**: Typos when entering Meeting IDs
+⚠️ **No calendar visibility**: Others can't see the room is in use
 
 ### Staff Workflow with Manual Join
 
@@ -187,116 +207,120 @@ Without calendar integration:
 
 ---
 
-## Comparison Table
+## Comparison: Scheduled vs Manual Join
 
-| Feature | Calendar Integration | Manual Join (None) |
-|---------|---------------------|-------------------|
+| Feature | Scheduled (with zoomroom@wfanet.org) | Manual Join |
+|---------|-------------------------------------|-------------|
 | **Ease of starting meeting** | Tap "Start" button | Enter Meeting ID manually |
 | **Schedule visibility** | See all meetings on display | No schedule shown |
-| **Setup time** | 30-60 minutes | Already set up |
 | **Staff training needed** | Minor (add room when scheduling) | None |
 | **Room conflict prevention** | Yes (Outlook shows availability) | No (manual coordination) |
-| **Works for ad-hoc meetings** | Yes (can still manually join) | Yes |
 | **Speed to start meeting** | ~5 seconds | ~30 seconds |
 | **Risk of double-booking** | Low (Outlook manages) | Higher (no system tracking) |
-| **Best for** | Regular scheduled meetings | Flexible/ad-hoc usage |
+| **Best for** | Regular scheduled meetings | Ad-hoc/external meetings |
+| **Works for external meetings** | No (unless they invite room) | Yes (join any Meeting ID) |
 
 ---
 
-## Hybrid Approach
+## Best Practices for WFA Staff
 
-You can enable calendar integration AND still manually join meetings:
+### For Most Meetings: Use Calendar Integration
+- **Always add** `zoomroom@wfanet.org` when scheduling meetings for the conference room
+- Check room availability in Outlook before scheduling to avoid conflicts
+- Enjoy one-tap meeting starts
 
+### For Ad-Hoc/External Meetings: Use Manual Join
+- Tap "Join" on the controller
+- Enter the Meeting ID
+- Works for any Zoom meeting
+
+### This Hybrid Approach Gives You:
 - **Scheduled meetings**: Display on screen, tap to start
 - **Ad-hoc meetings**: Use "Join" button and enter Meeting ID as before
-
-This gives you the best of both worlds.
-
----
-
-## Recommendations
-
-### Choose Calendar Integration If:
-- Most meetings are scheduled in advance
-- You want to prevent room booking conflicts
-- You want to simplify the user experience
-- You have 30-60 minutes for initial setup
-- Your staff are comfortable with a small workflow change
-
-### Stay with Manual Join If:
-- Most meetings are ad-hoc or spontaneous
-- Room booking conflicts are rare
-- You want zero setup time
-- Staff prefer maximum flexibility
-- You don't want to change current workflows
-
-### Our Recommendation for WFA:
-**Enable Calendar Integration** because:
-1. You have multiple meeting organizers who likely schedule in advance
-2. It prevents confusion about who's using the room when
-3. The one-tap experience is significantly easier for staff
-4. You can still manually join meetings when needed
-5. It's more professional and reduces friction for regular use
+- **Best of both worlds**: Convenience when planned, flexibility when needed
 
 ---
 
-## Migration Path
+## Why We Chose Calendar Integration for WFA
 
-If you choose to enable calendar integration:
+WFA implemented calendar integration because:
+1. Multiple meeting organizers schedule meetings in advance
+2. Prevents confusion about who's using the room when
+3. One-tap experience is significantly easier for staff
+4. Outlook integration provides room availability checking
+5. Manual join still available for ad-hoc meetings
+6. More professional and reduces friction for regular use
 
-### Phase 1: Setup (Week 1)
-1. Create room resource mailbox
-2. Configure Zoom Room calendar integration
-3. Test with a few sample meetings
+---
 
-### Phase 2: Pilot (Week 2)
-1. Train 2-3 meeting organizers
-2. Have them use calendar integration for their meetings
-3. Gather feedback
+## Maintaining the Integration
 
-### Phase 3: Rollout (Week 3+)
-1. Announce to all staff
-2. Provide quick training (5-minute demo or email instructions)
-3. Update existing recurring meetings to include room resource
+### Regular Maintenance
+- **No ongoing maintenance required** - the integration runs automatically
+- Room resource credentials are securely stored in Zoom admin portal
+- Calendar synchronization happens in real-time
 
-### Ongoing
-- Both methods work: scheduled meetings display automatically, ad-hoc meetings use manual join
-- Staff naturally transition as they see the benefit
+### If Issues Arise
+- Check Zoom admin portal → Room Management → Calendar tab for connection status
+- Verify room resource mailbox is active in Microsoft 365 admin center
+- Re-authorize connection if needed (same process as initial setup)
+
+### Updating Settings
+To modify calendar integration settings:
+1. Sign in to Zoom admin portal
+2. Room Management → Select Zoom Room → Calendar tab
+3. Adjust settings (auto-start, check-in requirements, etc.)
+4. Changes take effect immediately
 
 ---
 
 ## Frequently Asked Questions
 
-**Q: Can I switch back to "None" if calendar integration doesn't work for us?**
-A: Yes, you can disable it anytime in the Zoom admin portal.
+**Q: Can I disable calendar integration if needed?**
+A: Yes, you can disable it anytime in the Zoom admin portal (Room Management → Calendar tab → set to "None").
 
 **Q: What if someone forgets to add the room resource when scheduling?**
-A: They can still manually join using the Meeting ID. Or, forward the meeting invite to the room resource email.
+A: They can still manually join using the Meeting ID. Or, edit the meeting to add `zoomroom@wfanet.org` or forward the meeting invite to the room resource email.
 
-**Q: Will this change our existing meetings?**
-A: No. Existing meetings continue to work with manual join. You can optionally update them to add the room resource.
+**Q: Do I need to update existing meetings?**
+A: No, existing meetings continue to work with manual join. You can optionally update them to add `zoomroom@wfanet.org` for easier one-tap starting in future occurrences.
 
 **Q: Can guests/external attendees still join?**
 A: Yes, they join from their own devices as usual. Only the room itself changes how it joins.
 
 **Q: Does this require a specific Zoom license?**
-A: You already have a Zoom Rooms license (required to set up the Zoom Room initially). Calendar integration is included.
+A: Calendar integration is included with the Zoom Rooms license. No additional licensing required.
 
-**Q: What if the room resource mailbox password gets compromised?**
-A: Reset it in Microsoft 365 admin center, then re-authorize the Zoom Room connection.
+**Q: What if the room resource mailbox password needs to be changed?**
+A: Reset it in Microsoft 365 admin center (admin.microsoft.com → Users → Room resources), then re-authorize the Zoom Room connection in the Zoom admin portal.
 
 **Q: Can we have multiple Zoom Rooms with calendar integration?**
-A: Yes, create a room resource mailbox for each Zoom Room.
+A: Yes, create a separate room resource mailbox for each Zoom Room (e.g., zoomroom2@wfanet.org).
+
+**Q: How do I check if the room is available before scheduling?**
+A: In Outlook Calendar, when creating a meeting, add `zoomroom@wfanet.org` as an attendee. Outlook will show the room's availability and alert you if there's a conflict.
 
 ---
 
-## Next Steps
+## Reference: Setup Steps (Already Completed)
 
-1. **Review this document** with key stakeholders
-2. **Test the current setup** with manual join for a few days
-3. **Decide** which approach fits WFA best
-4. **If choosing calendar integration**: Follow the setup steps in this document
-5. **Train staff** on the chosen approach (5-10 minutes)
+For documentation purposes, here are the steps that were completed to set up calendar integration:
+
+### Step 1: Create Room Resource Mailbox in Microsoft 365
+1. Signed in to Microsoft 365 Admin Center (admin.microsoft.com)
+2. Navigated to Resources → Rooms & equipment
+3. Created room resource:
+   - Name: WFA Zoom Room
+   - Email: zoomroom@wfanet.org
+   - Auto-accept: Enabled
+   - Booking permissions: All WFA users
+
+### Step 2: Configure Zoom Room Calendar Integration
+1. Signed in to Zoom Admin Portal
+2. Room Management → Zoom Room → Calendar tab
+3. Selected Office 365 as calendar service
+4. Authorized with room resource credentials
+5. Verified connection status: Active
 
 ---
 

@@ -6,7 +6,8 @@
 - [Getting Started](#getting-started)
 - [Scheduling Meetings for the Zoom Room](#scheduling-meetings-for-the-zoom-room)
 - [Starting a Meeting in the Zoom Room](#starting-a-meeting-in-the-zoom-room)
-- [Joining an Existing Meeting](#joining-an-existing-meeting)
+- [Managing Calendar Events for the Zoom Room](#managing-calendar-events-for-the-zoom-room)
+- [When Meetings Run Over Time](#when-meetings-run-over-time)
 - [Delegation and Remote Control](#delegation-and-remote-control)
 - [Troubleshooting](#troubleshooting)
 - [Tips & Tricks](#tips--tricks)
@@ -70,42 +71,77 @@ This means you can run meetings from your desk, but only IT admins can modify th
 
 ## Scheduling Meetings for the Zoom Room
 
-Since our Zoom Room calendar integration is set to "None", you have two main options for scheduling:
+Our Zoom Room is integrated with Microsoft 365 calendar (resource: **zoomroom@wfanet.org**). This means meetings scheduled with the room resource automatically appear on the Zoom Room display for one-tap joining.
 
-### Option 1: Schedule as a Regular Zoom Meeting (Recommended)
+### Option 1: Schedule with Calendar Integration (Recommended)
 
-This is the simplest approach and works well when the organizer will be present:
+This is the easiest method and provides the best experience:
 
-1. **Create the meeting in Outlook as usual**
+1. **Create the meeting in Outlook**
    - Open Outlook Calendar
-   - Create a new meeting
-   - Add attendees
+   - Create a new meeting and add attendees
    - Use the Zoom add-in to "Add a Zoom Meeting" (this adds the Zoom meeting link)
+   - **Add the Zoom Room as a resource**: Type `zoomroom@wfanet.org` in the Location field or add it as a required attendee
+   - Send the invitation
 
-2. **On meeting day**: Simply join the meeting from the Zoom Room instead of your laptop
-   - The meeting exists in Zoom's system
-   - Anyone can join from the Zoom Room using the Meeting ID
+2. **The room resource automatically accepts** the meeting invitation
+
+3. **On meeting day**: Walk into the meeting room
+   - Your meeting appears on the Zoom Room display with meeting title and time
+   - Tap **"Start Meeting"** on the scheduled meeting
+   - Done! No need to enter Meeting IDs
 
 **Pros**:
-- Familiar workflow
-- Works with existing meetings
-- No changes to invitation process
+- One-tap to start meetings
+- Meeting appears on room display automatically
+- See room schedule at a glance
+- Prevents double-booking (Outlook shows room availability)
+- Professional and efficient
 
 **Cons**:
-- Requires manual step to join from Zoom Room
-- Meeting doesn't automatically appear on Zoom Room display
+- Requires adding the room resource when scheduling (one extra step)
+- Existing meetings need to be updated to add the room
 
-### Option 2: Use Personal Meeting ID (PMI)
+### Option 2: Manual Join (Alternative Method)
 
-For recurring meetings or when you want a consistent meeting room:
+You can still manually join any Zoom meeting without scheduling it with the room resource:
 
-1. Use your Personal Meeting ID in the Zoom Room
-2. Attendees join your PMI as usual
-3. You control the meeting from the Zoom Room
+1. **Get the Meeting ID** from your Outlook invitation or Zoom app
+
+2. **At the Zoom Room**:
+   - Tap "Join" on the controller
+   - Enter the Meeting ID
+   - Enter the password if required
+   - Tap "Join Meeting"
+
+**When to use this**:
+- Ad-hoc meetings not scheduled in advance
+- When you forgot to add the room resource when scheduling
+- Joining someone else's meeting that wasn't scheduled for this room
+
+### Option 3: Use Personal Meeting ID (PMI)
+
+For recurring internal meetings or when you want a consistent meeting room:
+
+1. Schedule a recurring meeting in Outlook with your Personal Meeting ID
+2. Add `zoomroom@wfanet.org` as a resource
+3. The meeting appears on the Zoom Room display for each occurrence
+4. Attendees join your PMI as usual
 
 ## Starting a Meeting in the Zoom Room
 
-### Method 1: Using the In-Room Controller
+### Method 1: Start a Scheduled Meeting (Easiest)
+
+If you scheduled the meeting with the room resource (zoomroom@wfanet.org):
+
+1. **Walk into the meeting room** at your scheduled time
+2. **Look at the Zoom Room display** - your meeting is shown with title and time
+3. **Tap "Start Meeting"** on your scheduled meeting
+4. Done! The Zoom Room joins your meeting automatically
+
+### Method 2: Using the In-Room Controller (Manual)
+
+For ad-hoc meetings or when the meeting wasn't scheduled with the room:
 
 1. **Wake up the controller** (tap the screen)
 2. **Choose one of these options**:
@@ -117,22 +153,61 @@ For recurring meetings or when you want a consistent meeting room:
    - Meeting ID and password will display on screen
    - Participants join using their regular Zoom app
 
-### Method 2: Using Zoom Room Controller App (From Your Desk)
+### Method 3: Using Zoom Room Controller App (From Your Desk)
 
 1. **Open Zoom Room Controller App** on your Windows PC
 2. **Select the WFA meeting room**
 3. **Start or Join**:
+   - If your meeting is scheduled with the room, you'll see it in the app - click to start
    - Click "Start Meeting" to begin an instant meeting in the room
-   - Click "Join Meeting" and enter the Meeting ID
+   - Click "Join Meeting" and enter the Meeting ID for meetings not scheduled with the room
 4. **Walk to the meeting room** - the meeting will already be running
 
 **Advantage**: You can set up the meeting before walking to the room, saving time.
 
-## Joining an Existing Meeting
+## Managing Calendar Events for the Zoom Room
 
-### For Scheduled Meetings
+### Adding the Room to an Existing Meeting
 
-Since we're not using calendar integration, follow these steps:
+If you already scheduled a meeting but forgot to add the room resource:
+
+**Option 1: Edit the meeting**
+1. Open the meeting in your Outlook Calendar
+2. Click "Edit" or open the meeting details
+3. Add `zoomroom@wfanet.org` to the Location field or as an attendee
+4. Click "Send Update"
+5. The room resource will accept and the meeting will appear on the Zoom Room display
+
+**Option 2: Forward the meeting**
+1. Open the meeting in Outlook
+2. Forward the meeting invitation to `zoomroom@wfanet.org`
+3. The room will receive and display the meeting
+
+### Changing a Meeting Time or Details
+
+1. Open the meeting in your Outlook Calendar
+2. Make your changes (time, attendees, title, etc.)
+3. Click "Send Update"
+4. The Zoom Room calendar updates automatically
+5. The updated meeting appears on the room display with new details
+
+### Deleting or Cancelling a Meeting
+
+**To cancel a meeting:**
+1. Open the meeting in Outlook Calendar
+2. Click "Cancel Meeting"
+3. Send the cancellation
+4. The meeting is automatically removed from the Zoom Room display
+
+**To remove the room from a meeting (keep the meeting, just not in the room):**
+1. Open the meeting in Outlook
+2. Remove `zoomroom@wfanet.org` from the location or attendees
+3. Send Update
+4. The meeting disappears from the Zoom Room display (but continues for other attendees)
+
+### Joining an Existing Meeting Without Calendar Integration
+
+For meetings not scheduled with the room resource, or when joining someone else's meeting:
 
 1. **Get the Meeting ID** from your Outlook invitation
    - Look for the Zoom meeting link or Meeting ID in the email
@@ -149,13 +224,107 @@ Since we're not using calendar integration, follow these steps:
    - Enter the Meeting ID and join
    - Walk to the meeting room
 
-### Converting Laptop-Based Meetings to Zoom Room
+## When Meetings Run Over Time
 
-For meetings already scheduled on your laptop:
+### What Happens at the Scheduled End Time
 
-1. **Before the meeting**: Note the Meeting ID from your Zoom invitation
-2. **At meeting time**: Instead of joining on your laptop, join from the Zoom Room using the Meeting ID
-3. **Optional**: Keep your laptop connected for backup or to share your screen if needed
+**Important**: When a meeting is scheduled with the room resource (zoomroom@wfanet.org), the Zoom Room displays the scheduled start and end times. However, **the Zoom meeting itself does not automatically disconnect at the scheduled end time.**
+
+Once you start a meeting, it continues until someone manually ends it, regardless of the calendar schedule.
+
+### Typical Behavior
+
+**During the meeting:**
+- The meeting runs normally until the scheduled end time
+- Participants can continue talking and sharing
+
+**At the scheduled end time:**
+- The Zoom Room display may show a notification that the scheduled time has ended
+- If another meeting is scheduled next, a warning will appear on screen
+- **The meeting does NOT automatically end** - someone must tap "End Meeting"
+
+**If there's a following meeting:**
+- The Zoom Room will display notifications about the upcoming meeting
+- Warning messages may appear: "Next meeting starts in X minutes"
+- The current meeting continues until manually ended
+
+### Best Practices for Time Management
+
+**For Meeting Organizers:**
+1. **Watch the time**: Set a timer or reminder to end on schedule
+2. **End meetings promptly**: Tap "End Meeting" on the controller when finished
+3. **Respect the next booking**: If you need more time and there's no conflict, check the room calendar first
+4. **Communicate**: If running over, let participants know you'll need to wrap up
+
+**For Back-to-Back Meetings:**
+1. **Schedule buffer time**: Consider ending your meeting 5 minutes before the hour to allow setup time for the next group
+2. **Check the schedule**: Look at the Zoom Room display to see if another meeting is scheduled after yours
+3. **Be prepared to end promptly**: If another meeting is scheduled, respect their booking time
+
+**If You Need More Time:**
+1. **Check the room calendar**: Look at the Zoom Room display to see if the room is free after your scheduled time
+2. **In Outlook**: Check if zoomroom@wfanet.org is available for an extended time
+3. **Extend your booking**: If the room is free, edit your Outlook meeting to extend the time
+4. **Don't assume**: If you haven't extended the booking and another meeting is scheduled, you must end on time
+
+### Handling Meeting Conflicts
+
+**Scenario: Your meeting is running over and the next meeting is starting**
+
+The next meeting organizer will see:
+- Your meeting is still active in the room
+- Their scheduled meeting on the display but unable to start
+
+**Resolution:**
+1. **Current meeting**: Politely end the meeting or move to another space
+2. **Next meeting**: Can manually end the previous meeting from the controller if the organizer has left
+3. **If uncertain**: Contact the previous meeting organizer or IT support
+
+**Scenario: You arrive and the previous meeting is still running**
+
+1. Wait outside the room briefly (2-3 minutes grace period is courteous)
+2. If the meeting clearly shows no signs of ending, politely knock or check if they're aware
+3. Check the Zoom Room display - verify your meeting is indeed scheduled
+4. As a last resort, if they're significantly over (10+ minutes) and don't respond, you may need to contact IT support
+
+### Configurable Options (Admin Settings)
+
+IT administrators can configure several options in the Zoom admin portal to manage room time:
+
+**Buffer Time Between Meetings:**
+- Automatically blocks time between meetings (e.g., 5 or 10 minutes)
+- Prevents back-to-back scheduling conflicts
+- Gives time for room setup and cleanup
+
+**Check-In Requirements:**
+- Next meeting organizer must "check in" within X minutes of scheduled start
+- If they don't check in, the current meeting can continue using the room
+- Helps prevent wasted bookings when organizers don't show up
+
+**Automatic Meeting Warnings:**
+- Displays countdown timers: "Meeting ends in 10 minutes"
+- Shows notifications when next meeting is approaching
+- Visual reminders on the controller and display
+
+**Release on No-Show:**
+- If no one starts a scheduled meeting within X minutes, the booking is released
+- Makes the room available for others
+
+**Note**: Check with your IT administrator about which settings are enabled for the WFA Zoom Room.
+
+### Room Etiquette Summary
+
+✅ **DO:**
+- End meetings on time or slightly early
+- Check the room schedule before extending discussions
+- Extend your booking in Outlook if you need more time and the room is free
+- Be respectful of the next booking
+
+❌ **DON'T:**
+- Assume you can run over without checking the schedule
+- Continue meetings significantly past the scheduled end time when another meeting is waiting
+- Leave meetings running when you exit the room (always tap "End Meeting")
+- Force the next group to wait without acknowledgment
 
 ## Delegation and Remote Control
 
@@ -226,12 +395,19 @@ For meetings already scheduled on your laptop:
 - Alternative: Join the meeting on your laptop as well and share from there
 
 **Problem**: Meeting didn't start automatically
-- **Solution**: This is expected - we're not using calendar integration
-- Manually start or join the meeting using the Meeting ID
+- **Solution**: Check if the meeting was scheduled with the room resource (zoomroom@wfanet.org)
+- If not scheduled with the room, tap "Start Meeting" on the scheduled item or manually join using the Meeting ID
+- If it's past the start time, the room may be waiting for you to tap "Start"
 
 **Problem**: Wrong meeting is showing on screen
 - **Solution**: End the current meeting on the controller
-- Start/join the correct meeting using the Meeting ID
+- Look for your scheduled meeting on the display and tap "Start"
+- Or manually join the correct meeting using the Meeting ID
+
+**Problem**: My meeting doesn't appear on the Zoom Room display
+- **Solution**: Check if you added zoomroom@wfanet.org when scheduling
+- If not, you can edit the meeting in Outlook and add the room resource
+- Or manually join using the Meeting ID (tap "Join" on controller)
 
 ### Getting Help
 
@@ -244,8 +420,9 @@ For meetings already scheduled on your laptop:
 ### Best Practices
 
 **For Meeting Organizers**:
+- **Always add zoomroom@wfanet.org when scheduling** for the easiest experience
 - Arrive 5 minutes early to set up the Zoom Room
-- Have your Meeting ID ready before entering the room
+- If you didn't add the room resource, have your Meeting ID ready
 - Test audio/video before attendees join
 - Consider using the Zoom Room Controller App to start the meeting before walking to the room
 
@@ -295,28 +472,41 @@ For meetings already scheduled on your laptop:
 
 For meetings already scheduled that you want to use with the Zoom Room:
 
+**Option 1: Add the room resource (recommended)**
+1. Open the meeting in Outlook Calendar
+2. Edit the meeting and add `zoomroom@wfanet.org` as a location or attendee
+3. Send Update
+4. The meeting now appears on the Zoom Room display for one-tap starting
+
+**Option 2: Keep existing meeting, join manually**
 1. **No changes needed to the invitation** - keep the same Meeting ID
-2. **Update meeting practices**:
-   - Add a note in the Outlook meeting: "Meeting will be hosted from the WFA Zoom Room"
-   - First person to arrive joins the meeting from the Zoom Room
-3. **For recurring meetings**: Consider updating the series description with Zoom Room instructions
+2. **On meeting day**: Manually join from the Zoom Room using the Meeting ID
+3. **Optional**: Add a note in the meeting description: "Will be hosted from WFA Zoom Room"
+
+**For recurring meetings**: Edit the entire series to add the room resource once, and all future occurrences will appear on the Zoom Room display
 
 ### Efficiency Tips
 
 - **Bookmark**: Save the Zoom Room Controller App to your taskbar for quick access
 - **Pre-join**: Use the controller app 2-3 minutes before the meeting to start setup
-- **Naming**: If you schedule meetings specifically for the Zoom Room, add [Zoom Room] to the subject line
+- **Always invite the room**: Make it a habit to add zoomroom@wfanet.org when creating Zoom meetings for the conference room
+- **Check room availability**: Before scheduling, check the room resource availability in Outlook to avoid conflicts
 - **Backup Plan**: Keep your laptop handy for the first few meetings in case of issues
 
 ---
 
 ## Quick Reference Card
 
+**To Start a Scheduled Meeting** (if you added zoomroom@wfanet.org):
+1. Walk into the room
+2. See your meeting on the display
+3. Tap "Start Meeting"
+
 **To Start an Instant Meeting**:
 1. Tap "Start Instant Meeting" on controller
 2. Share Meeting ID with participants
 
-**To Join a Scheduled Meeting**:
+**To Join a Meeting Manually** (not scheduled with room):
 1. Get Meeting ID from Outlook
 2. Tap "Join" on controller
 3. Enter Meeting ID → Join

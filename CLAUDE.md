@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This repository contains documentation for managing a Zoom Room setup at WFA company. The goal is to create an operating manual for staff who are regular Zoom users but have not used Zoom Rooms before.
+This repository contains documentation for managing a Zoom Room setup at WFA. The goal is to create an operating manual for staff who are regular Zoom users but have not used Zoom Rooms before.
 
 ## Context
 
 - **Environment**: Windows workstations with Microsoft 365
-- **Current Setup**: Zoom Room with calendar integration set to "None" (may change - see CALENDAR-OPTIONS.md)
+- **Current Setup**: Zoom Room with Microsoft 365 calendar integration (resource: zoomroom@wfanet.org)
 - **Users**: Multiple meeting organizers who previously used Outlook invitations and connected laptops to meeting room displays
 - **Available Tools**: Zoom Room Controller App (Windows Zoom desktop app addon) - available to all staff
 - **Access Control**: Any user with WFA Zoom account can use the Controller App; room passcode protects configuration changes
