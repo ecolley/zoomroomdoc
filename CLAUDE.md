@@ -8,7 +8,7 @@ This repository contains documentation for managing a Zoom Room setup at WFA. Th
 
 ## Context
 
-- **Environment**: Windows workstations with Microsoft 365
+- **Environment**: Windows laptops with Microsoft 365
 - **Current Setup**: Zoom Room with Microsoft 365 calendar integration (resource: zoomroom@wfanet.org)
 - **Users**: Multiple meeting organizers who previously used Outlook invitations and connected laptops to meeting room displays
 - **Available Tools**: Zoom Room Controller App (Windows Zoom desktop app addon) - available to all staff

@@ -30,13 +30,13 @@ A Zoom Room is a dedicated meeting space with:
 
 **Key Difference**: Unlike regular Zoom meetings where you join from your laptop, the Zoom Room itself joins the meeting. You control it using:
 1. The Zoom Room Controller (in-room device)
-2. The Zoom Room Controller App on your Windows PC
+2. The Zoom Room Controller App on your Windows laptop
 
 ## Getting Started
 
 ### Prerequisites
 
-1. **Zoom Desktop App**: Ensure you have the latest Zoom desktop app installed on your Windows PC
+1. **Zoom Desktop App**: Ensure you have the latest Zoom desktop app installed on your Windows laptop
 2. **Zoom Room Controller App**: Install this add-on from the Zoom app
    - Open Zoom Desktop App → Click your profile icon → Settings → Add-ons
    - Enable "Zoom Room Controller"
@@ -44,7 +44,7 @@ A Zoom Room is a dedicated meeting space with:
 
 ### First Time Setup
 
-1. Launch the Zoom Room Controller App on your Windows PC
+1. Launch the Zoom Room Controller App on your Windows laptop
 2. Sign in with your WFA Zoom credentials (your normal Zoom account)
 3. The app will discover available Zoom Rooms on your network
 4. Select the WFA meeting room from the list
@@ -67,7 +67,7 @@ A Zoom Room is a dedicated meeting space with:
 - Signing out of the Zoom Room
 - Exiting the Zoom Room application
 
-This means you can run meetings from your desk, but only IT admins can modify the room configuration.
+This means you can run meetings from your laptop, but only IT admins can modify the room configuration.
 
 ## Scheduling Meetings for the Zoom Room
 
@@ -153,9 +153,9 @@ For ad-hoc meetings or when the meeting wasn't scheduled with the room:
    - Meeting ID and password will display on screen
    - Participants join using their regular Zoom app
 
-### Method 3: Using Zoom Room Controller App (From Your Desk)
+### Method 3: Using Zoom Room Controller App (From Your Laptop)
 
-1. **Open Zoom Room Controller App** on your Windows PC
+1. **Open Zoom Room Controller App** on your Windows laptop
 2. **Select the WFA meeting room**
 3. **Start or Join**:
    - If your meeting is scheduled with the room, you'll see it in the app - click to start
@@ -219,7 +219,7 @@ For meetings not scheduled with the room resource, or when joining someone else'
    - Tap "Join Meeting"
 
 3. **Or use the Zoom Room Controller App**:
-   - Open the app on your PC
+   - Open the app on your laptop
    - Select the WFA meeting room
    - Enter the Meeting ID and join
    - Walk to the meeting room
@@ -357,7 +357,7 @@ IT administrators can configure several options in the Zoom admin portal to mana
 
 ### Controlling the Zoom Room Remotely
 
-**From Your Desk**:
+**From Your Laptop**:
 1. Open Zoom Room Controller App
 2. Select the WFA meeting room
 3. You can:
@@ -459,7 +459,7 @@ IT administrators can configure several options in the Zoom admin portal to mana
 - No need to schedule in Outlook if it's internal-only
 
 **Back-to-Back Meetings**:
-- Use the Zoom Room Controller App to queue up meetings from your desk
+- Use the Zoom Room Controller App to queue up meetings from your laptop
 - Walk into a ready-to-go meeting room
 
 **Hybrid Meetings** (Some attendees in room, some remote):
